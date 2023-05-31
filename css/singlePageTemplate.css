@@ -148,7 +148,7 @@ ul li:hover a {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
+	background-image: url("../images/ocean.jpg");
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -230,7 +230,7 @@ footer .footer_column p {
 	transition: all 0.3s linear;
 }
 .button:hover {
-	background-color: #FEFEFE;
+	background-color: #FFFFFF;
 	color: #C4C4C4;
 	cursor: pointer;
 }
