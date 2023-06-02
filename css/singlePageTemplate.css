@@ -1,15 +1,22 @@
 @charset "UTF-8";
 /* Body */
 body {
-	font-family: Roboto Slab;
-	background-color: #D6F0FC;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	font-style: normal;
-	font-weight: 200;
+    font-family: Roboto Slab;
+    background-color: #D6F0FC;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-style: normal;
+    font-weight: 200;
+    background-image: url(../images/peakpx.jpg);
 }
+body p {
+}
+.container .top p {
+}
+
+
 
 /* Container */
 .container {
@@ -262,6 +269,9 @@ footer {
 .hidden {
 	display: none;
 }
+body p {
+}
+
 
 /* Mobile */
 @media (max-width: 320px) {
@@ -499,7 +509,7 @@ ul li:hover a {
 }
 
 .mainimg {
-	width: 80%;
+    width: 30%;
 }
 .title {
 	color:#00316b;
