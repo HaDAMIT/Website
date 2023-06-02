@@ -509,7 +509,7 @@ ul li:hover a {
 }
 
 .mainimg {
-    width: 30%;
+    width: 60%;
 }
 .title {
 	color:#00316b;
@@ -518,4 +518,7 @@ ul li:hover a {
 
 }
 .toplink {
+}
+.video {
+    width: 80%;
 }

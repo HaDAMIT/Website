@@ -9,6 +9,15 @@
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script>
+    // Selecting the iframe element
+    var vid = document.getElementById("webvideo");
+    
+    // Adjusting the iframe height onload event
+    vid.onload = function(){
+        vid.style.height = vid.contentWindow.document.body.scrollHeight + 'px';
+    }
+   </script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -34,10 +43,13 @@
   <!-- Hero Section -->
 <div align="center" class="top">
   <h1 class="title">Overview</h1>
-<p><img src="images/life below water.gif" class="mainimg"></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k--Cxg67VZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+
+<iframe id="webvideo" src="https://www.youtube.com/embed/k--Cxg67VZo" class="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+	
 </div>
   
+
+	
   <!-- About Section -->
   <section class="about" id="about">
     <h2 class="hidden">About</h2>
