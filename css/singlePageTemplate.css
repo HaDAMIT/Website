@@ -158,11 +158,12 @@ ul li a {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
+	background-image: url("../images/turtle_choking.png");
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-bottom: 5px;
 }
 .parallax {
 	color: #FFFFFF;
@@ -345,7 +346,7 @@ nav ul li {
 }
 .banner {
 	background-color: #2D9AB7;
-	background-image: none;
+	background-image:none;
 }
 .tagline {
 	margin-top: 20px;
