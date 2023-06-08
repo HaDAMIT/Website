@@ -520,5 +520,15 @@ ul li:hover a {
 .toplink {
 }
 .video {
-    width: 80%;
+	position: absolute;
+  top: 0;
+  left: 0;
+	width:100%;
+	height:100%;
+}
+.vidbox {
+	width: 71%;
+  padding: 20%;
+  box-sizing: border-box;
+  position: relative;
 }

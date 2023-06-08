@@ -7,23 +7,6 @@
 <title>Light Theme</title>
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<script>
-    // Selecting the iframe element
-    var vid = document.getElementById("webvideo");
-    
-    // Adjusting the iframe height onload event
-    vid.onload = function(){
-        vid.style.height = vid.contentWindow.document.body.scrollHeight + 'px';
-    }
-   </script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <!-- Main Container -->
@@ -44,7 +27,11 @@
 <div align="center" class="top">
   <h1 class="title">Overview</h1>
 
-<iframe id="webvideo" src="https://www.youtube.com/embed/k--Cxg67VZo" class="video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+<div class="vidbox" align="center">
+	<iframe src="https://www.youtube.com/embed/k--Cxg67VZo?autoplay=1&mute=1&?cc_load_policy=1&cc_lang_pref=en" 
+			class="video" id="webvideo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+	</div>
+
 	
 </div>
   
