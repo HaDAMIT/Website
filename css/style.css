@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Body */
 body {
-    font-family: Roboto Slab;
+  font-family: 'Poppins', sans-serif;
     background-color: #D6F0FC;
     margin-top: 0px;
     margin-right: 0px;
@@ -319,7 +319,6 @@ footer .footer_column p {
 
 .button:hover {
 	background-color: #FEFEFE;
-	color: #C4C4C4;
 	cursor: pointer;
 }
 
@@ -451,6 +450,10 @@ footer {
 @media (min-width: 321px)and (max-width: 767px) {
 	header {
 		padding-bottom: 10px;
+	}
+	
+	#active {
+	color: #00316B;
 	}
 	
 	.logo {
@@ -585,7 +588,7 @@ footer {
 }
 
 /* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
+@media (min-width: 768px) {
 	.text_column {
 		width: 100%;
 	}
@@ -615,4 +618,10 @@ footer {
 		margin-top: 0px;
 		padding-top: 0px;
 	}
+	
+	#active {
+	color: #0C96DC;
 }
+	
+}
+
