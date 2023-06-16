@@ -7,6 +7,30 @@
 <title>Life Below Water</title>
 <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+	function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	// Get the element with id="defaultOpen" and click on it
+
+	</script>
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 </head>
 <body>
@@ -76,26 +100,56 @@
   </section>
   <!-- More Info Section -->
   <footer>
-    <article class="footer_column">
+	  <!-- Tabs links -->
+	  <h3 style="margin-left: 20px">Targets</h3>
+<div class="tab">
+  <button id="defaultOpen" class="tablinks" onclick="openTab(event, '14.1')">14.1</button>
+	
+  <button class="tablinks" onclick="openTab(event, '14.2')">14.2</button>
+	
+  <button class="tablinks" onclick="openTab(event, '14.3')">14.3</button>
+	
+  <button class="tablinks" onclick="openTab(event, '14.4')">14.4</button>
+</div>
+
+<!-- Tab content -->
+<div id="14.1" class="tabcontent">
+  <article class="footer_column">
       <h3>Target 14.1</h3>
-      <img src="https://static.timesofisrael.com/blogs/uploads/2022/06/plastic-ocean-waste.jpeg" alt="" width="400" height="200" class="cards"/>
+      <img src="https://static.timesofisrael.com/blogs/uploads/2022/06/plastic-ocean-waste.jpeg" alt="" class="cards"/>
       <p>By 2025,  prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution. The global trend of elevated coastal eutrophication continued in 2022 above the 2000-2004 baseline conditions, though different in magnitude from recent years. The highest rates are in the Arabian Sea.  </p>
     </article>
-    <article class="footer_column">
+</div>
+
+<div id="14.2" class="tabcontent">
+  <article class="footer_column">
       <h3>Target 14.2</h3>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylFHnlKTbccQ6z7u0MJw1iaJ1XumzKHDArw&usqp=CAU" alt="" width="400" height="200" class="cards"/>
-      <p></p>
+	  
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylFHnlKTbccQ6z7u0MJw1iaJ1XumzKHDArw&usqp=CAU" alt="" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ut, mollitia ullam error, modi sit voluptates temporibus facilis repellendus dolorem hic aliquid eaque doloribus numquam facere, quia totam, praesentium similique id nemo commodi? Harum doloremque ipsum ad, debitis eligendi sequi nulla accusantium modi corporis inventore, eos molestiae at beatae consectetur.</p>
     </article>
-	    <article class="footer_column">
+</div>
+
+<div id="14.3" class="tabcontent">
+  <article class="footer_column">
       <h3>Target 14.3</h3>
-      <img src="https://bpb-us-w2.wpmucdn.com/blogs.cofc.edu/dist/1/918/files/2019/02/dead-corals-1y8ywlg.jpg" alt="" width="400" height="200" class="cards"/>
+      <img src="https://bpb-us-w2.wpmucdn.com/blogs.cofc.edu/dist/1/918/files/2019/02/dead-corals-1y8ywlg.jpg" alt=""  class="cards"/>
       <p>The United Nations aim to  minimize and address the impacts of ocean acidification, including through enhanced scientific cooperation at all levels. Ocean acidification is increasing and will continue to do so if CO2 emissions do not stop rising, threatening marine ecosystems and the services they provide. Today, the ocean's average pH is 8.1 which means that the ocean today is about 30% more acidic than in pre-industrial times.</p>
     </article>
-	    <article class="footer_column">
+</div>
+	  
+<div id="14.4" class="tabcontent">
+	  <article class="footer_column">
       <h3>Target 14.4</h3>
       <img src="https://scx2.b-cdn.net/gfx/news/2019/in2017global.jpg" alt="" width="400" height="200" class="cards"/>
-      <p></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed explicabo ipsa iure voluptatem blanditiis odit natus nobis laudantium nulla omnis, doloremque similique hic quod itaque dicta labore id quasi sapiente suscipit porro corporis temporibus dolorum. Placeat ex aperiam amet magnam, dolore nam asperiores doloremque, quod rem, reiciendis quia nisi beatae.</p>
     </article>
+	  </div>
+    
+    
+	    
+<!--
+	    
 	    <article class="footer_column">
       <h3>Target 14.5</h3>
       <img src="" alt="" width="400" height="200" class="cards"/>
@@ -126,6 +180,7 @@
       <img src="" alt="" width="400" height="200" class="cards"/>
       <p></p>
     </article>
+-->
   </footer>
   <!-- Footer Section -->
   <section class="footer_banner" id="contact">
@@ -137,5 +192,6 @@
   <div class="copyright">&copy;2021- <strong>Light Theme</strong></div>
 </div>
 <!-- Main Container Ends -->
+	<script>document.getElementById("defaultOpen").click();</script>
 </body>
 </html>
