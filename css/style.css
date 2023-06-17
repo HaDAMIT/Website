@@ -274,6 +274,8 @@ ul li a {
   display: inline-block;
   overflow: hidden;
   border-radius: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
   background-color: #E7F7FE;
 }
 /* Style the buttons that are used to open the tab content */
