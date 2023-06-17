@@ -64,7 +64,7 @@ body, html {
 .main-button-red a {
   font-size: 13px;
   color: #fff;
-  background-color: #0c50e4;
+  background-color: #00316B;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -291,7 +291,7 @@ section.upcoming-meetings {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
+  padding-top: 40px;
   padding-bottom: 40px
 }
 .footer {
@@ -318,7 +318,6 @@ section.upcoming-meetings {
   .main-banner .caption .main-button-red {
     margin-top: 15px
   }
-  section.upcoming-meetings {
-    padding-top: 400px
-  }
+
 }
+
