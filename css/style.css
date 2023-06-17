@@ -175,8 +175,8 @@ ul li a {
 	border-radius: 20px;
 }
 .vidbox {
-  width: 71%;
-  padding: 20%;
+  width: 90%;
+  padding: 25.35%;
   box-sizing: border-box;
   position: relative;
   border: none;
@@ -674,4 +674,11 @@ footer {
     color: #0C96DC;
   }
 }
-#heading {}
+
+@media (min-width: 1250px) {
+	.vidbox {
+		width:954px;
+		height: 536.0625px;
+		padding: 0px;
+	}
+}
