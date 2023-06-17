@@ -11,6 +11,12 @@ body {
   font-weight: 200;
   background-image: url(../images/peakpx.jpg);
 }
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
+}
 /* Container */
 .container {
   width: 90%;
@@ -30,14 +36,59 @@ header {
   border-bottom: 1px solid #2C9AB7;
 }
 .logo {
+  margin-top: 10px;
+  margin-left: 25px;
   color: #fff;
   font-weight: bold;
   width: auto;
   float: left;
-  margin-top: 15px;
-  margin-left: 25px;
   letter-spacing: 4px;
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.fancy {
+  background-image:
+    url("../images/wave.png");
+  background-size: 110% auto;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.fancyd {
+  background-image:
+    url("../images/waved.png");
+  background-size: 110% auto;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#title {
+  margin-top: 0px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#targets {
+  padding-top: 10px;
+  margin-bottom: -20px;
+  font-size: 80px;
+}
+.icon {
+  height: 30px;
+  margin-right: 15px;
+  padding: none;
+  margin-bottom: -2px;
+  display: inline-block;
+}
+#heading {
+  color: white;
+  text-decoration: none;
 }
 nav {
   opacity: 100%;
@@ -109,24 +160,10 @@ ul li a {
   object-fit: cover;
   z-index: -1;
 }
-#bg-video::-webkit-media-controls {
-  display: none !important;
-}
-.video-overlay {
-  position: absolute;
-  background-color: rgba(31, 39, 43, 0.75);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-}
+
 /* Top */
 .top {
   margin-bottom: 30px;
-}
-.title {
-  color: #00316b;
 }
 .video {
   position: absolute;
@@ -134,13 +171,15 @@ ul li a {
   left: 0;
   width: 100%;
   height: 100%;
+	border: none;
+	border-radius: 20px;
 }
 .vidbox {
   width: 71%;
   padding: 20%;
   box-sizing: border-box;
   position: relative;
-  border:none;
+  border: none;
 }
 /* About Section */
 .text_column {
@@ -232,10 +271,10 @@ ul li a {
 }
 /* Style the tab */
 .tab {
+  display: inline-block;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  margin-left: 100px;
+  border-radius: 10px;
+  background-color: #E7F7FE;
 }
 /* Style the buttons that are used to open the tab content */
 .tab button {
@@ -249,11 +288,11 @@ ul li a {
 }
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #A6E1FA;
 }
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #76D0F8;
 }
 /* Style the tab content */
 .tabcontent {
@@ -265,7 +304,8 @@ ul li a {
 footer {
   background-color: #FFFFFF;
   padding-bottom: 35px;
-	width: 100%;
+  width: 100%;
+  text-align: center;
 }
 .footer_column {
   width: 80%;
@@ -287,6 +327,7 @@ footer .footer_column p {
   height: auto;
   max-width: 800px;
   max-height: 400px;
+  border-radius: 20px;
 }
 footer .footer_column p {
   padding-left: 30px;
@@ -297,35 +338,46 @@ footer .footer_column p {
   margin-left: 20px;
   margin-right: 20px;
 }
+li {
+  float: left;
+}
+.buttonholder {
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+  display: flex; /* Changed from block to flex */
+  justify-content: center; /* Added to center items horizontally */
+  align-items: center; /* Added to center items vertically */
+}
 .button {
   width: 200px;
-  margin-top: 40px;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   padding-top: 20px;
   padding-right: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
   text-align: center;
   vertical-align: middle;
-  border-radius: 0px;
+  border-radius: 18px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  border: 3px solid #FFFFFF;
+  background-color: #00316B;
+  rder: 3px solid #00316B;
   color: #FFFFFF;
   transition: all 0.3s linear;
 }
 .button:hover {
-  background-color: #FEFEFE;
-  cursor: pointer;
+  transform: scale(1.1);
 }
 .copyright {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #717070;
+  background-color: #1F262C;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: lighter;
@@ -333,16 +385,31 @@ footer .footer_column p {
   border-top-width: 2px;
 }
 .footer_banner {
-  background-color: #B3B3B3;
-  padding-top: 60px;
-  padding-bottom: 60PX;
+  background-image: url("../images/meetings-bg.jpg");
+  padding-top: 20px;
+  padding-bottom: 30px;
   margin-bottom: 0px;
-  background-image: url(../images/pattern.png);
   background-repeat: repeat;
 }
 footer {
   display: inline-block;
+  margin-bottom: 5px;
 }
+.footer2 {
+  display: block;
+  text-align: center;
+  border-top: 1px solid rgba(250, 250, 250, .15)
+}
+.footer2 p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff
+}
+.footer2 p a {
+  color: #5225f5;
+	
+}
+
 .hidden {
   display: none;
 }
@@ -380,7 +447,7 @@ footer {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .thumbnail {
     width: 100%;
@@ -429,9 +496,20 @@ footer {
     line-height: 22px;
     text-align: center;
   }
+  li {
+    float: none;
+  }
+  .buttonholder {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
 }
 /* Small Tablets */
-@media (min-width: 321px)and (max-width: 767px) {
+@media (min-width: 321px)and (max-width: 900px) {
   header {
     padding-bottom: 10px;
   }
@@ -441,14 +519,14 @@ footer {
   .logo {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 0px;
     margin-bottom: 20px;
     margin-left: 0px;
     color: #FFFFFF;
   }
   .container header nav {
-    margin-top: 0px;
+    margin-top: -11px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -485,7 +563,7 @@ footer {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .thumbnail {
     width: 100%;
@@ -548,12 +626,25 @@ footer {
   .footer_column {
     width: 100%;
   }
-  .title {
-    margin-top: 150px;
+  #title {
+    margin-top: 140px;
   }
+  li {
+    float: none;
+	  text-align: center;
+  }
+	
+	li a {
+		display: inline-block;
+	}
+  .buttonholder {
+    display: block;
+  }
+	
+	
 }
 /* Small Desktops */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .text_column {
     width: 100%;
   }
@@ -573,7 +664,7 @@ footer {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    font-size: 25px;
+    font-size: 22px;
   }
   .banner {
     margin-top: 0px;
@@ -583,3 +674,4 @@ footer {
     color: #0C96DC;
   }
 }
+#heading {}
