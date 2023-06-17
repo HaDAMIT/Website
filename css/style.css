@@ -140,6 +140,7 @@ ul li a {
   padding: 20%;
   box-sizing: border-box;
   position: relative;
+  border:none;
 }
 /* About Section */
 .text_column {
@@ -234,6 +235,7 @@ ul li a {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  margin-left: 100px;
 }
 /* Style the buttons that are used to open the tab content */
 .tab button {
@@ -263,6 +265,7 @@ ul li a {
 footer {
   background-color: #FFFFFF;
   padding-bottom: 35px;
+	width: 100%;
 }
 .footer_column {
   width: 80%;
