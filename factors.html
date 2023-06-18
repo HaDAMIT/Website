@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Below Water</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+ 
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container" id="fcontainer">
+  <!-- Navigation -->
+  <header id="fheader">
+    <div class="logo"> 
+		<a href="https://www.globalgoals.org/goals/14-life-below-water/">
+			<img class="icon" src="images/UN_emblem_blue.svg-removebg-preview (2).png" alt="UN logo">
+		</a>
+		
+		<a href="index.html">
+			<strong class="white" id="heading">Life Below Water</strong>
+		</a>
+	  </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">BACKGROUND</a></li>
+        <li><a href="#title" id="active">FACTORS</a></li>
+		<li><a href="">INNOVATION</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div align="center" class="top">
+      <h1 class="fancy" id="title">Contributing Factors and Examples&nbsp;</h1>
+      <img src="images/maxresdefault (1).jpg" class="image">
+    </div>
+    <p class="text_column" id="text_block" data_temp_dwid="0">The 'Life Below Water' goal addresses various contributing factors that pose challenges to the conservation and sustainable use of oceans, seas and marine resources. Here are some key factors and examples: </p>
+	</section>
+	
+	<section class="slider-wrapper">
+  <button class="slide-arrow" id="slide-arrow-prev">
+    &#8249;
+  </button>
+  <button class="slide-arrow" id="slide-arrow-next">
+    &#8250;
+  </button>
+  <ul class="slides-container" id="slides-container">
+    <li class="slide">
+			<h1>Pollution</h1>
+			<p>Pollution from various sources, such as industrial waste, agricultural runoff, and plastic waste, negatively impacts marine ecosystems. However, some positive actions have been taken in recent years to reduce the amount of pollution entering the ocean.</p></li>
+    <li class="slide">
+			<h1>Overfishing</h1>
+			<p>Overfishing disrupts marine food chains and depleted fish populations.Many environmental issues threatening the oceans are a result of human activity, such as pollution, overfishing, and climate change.</p></li>
+	<li class="slide">
+			<h1>Climate Change</h1>
+			<p>Rising sea temperatures, ocean acidification, and extreme weather events caused by climate change pose significant threats to marine ecosystems.Due to overfishing, coral reefs are increasingly threatened by the loss of fish and other marine life, which are crucial to the health of these fragile ecosystems.</p></li>
+	<li class="slide">
+			<h1>Habitat Destruction</h1>
+			<p> Destruction of coastal habitats, such as mangroves, seagrasses, and coral reefs, diminishes the capacity of these ecosystems to support diverse marine life. If the destruction continues, these ecosystems could become even more vulnerable to the effects of climate change, leading to even greater declines in biodiversity.</p></li>
+	<li class="slide">
+			<h1>Invasive Species</h1>
+			<p>Introduction of non-native species to marine environments disrupts the natural balance and can have detrimental effects on native species and ecosystems. Therefore, it is important to protect the marine environment from the introduction of invasive species, which can be devastating for marine life and ecosystems.</p></li>
+  </ul>
+</section>
+  <!-- Stats Gallery Section -->
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <h1 style="color:white; text-align: center;">Other Pages</h1>
+	  <ul class="buttonholder">
+	  <li><a href="index.html"><div class="button">Homepage</div></a></li>
+		  <li><a href="about.html"><div class="button">Background</div></a></li>
+		  <li><a href=""><div class="button">Innovation</div></a></li>
+		  </ul>
+	  <div class="footer2"> <br>
+    <br>
+    <p>Website Designed by Hadam, Arthur and Aryan</p>
+  </div>
+  </section>
+  <!-- Copyrights Section -->
+  
+</div>
+	
+<!-- Main Container Ends -->
+<script>
+	const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
+
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+});
+	</script>
+</body>
+</html>
