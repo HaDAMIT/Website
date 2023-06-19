@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Below Water</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+	function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	// Get the element with id="defaultOpen" and click on it
+
+	</script> 
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container">
+  <!-- Navigation -->
+  <header>
+    <div class="logo"> 
+		<a href="https://www.globalgoals.org/goals/14-life-below-water/">
+			<img class="icon" src="images/UN_emblem_blue.svg-removebg-preview (2).png" alt="UN logo">
+		</a>
+		
+		<a href="index.html">
+			<strong class="white" id="heading">Life Below Water</strong>
+		</a>
+	  </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#title" id="active">BACKGROUND</a></li>
+        <li><a href="factors.html">FACTORS</a></li>
+		<li><a href="">INNOVATION</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div align="center" class="top">
+      <h1 class="fancy" id="title">Background Information&nbsp;</h1>
+    </div>
+    <h2 class="hidden">About</h2>
+    <p class="text_column">The vast expanse of our oceans holds immeasurable importance for sustaining <strong class="fancyd">life</strong> on our planet.</p>
+	  
+    <p class="text_column">Human actions such as overfishing, pollution, climate change, coastal development and plastic pollution have caused <strong class="fancyd">extensive</strong> <strong class="fancyd">damage</strong> to the oceans. </p>
+	  
+    <p class="text_column"><strong class="fancyd">Goal 14</strong> aims to promote the conservation and <strong class="fancyd">sustainable</strong> use of marine ecosystems and resources to ensure their <strong class="fancyd">future</strong> viability. </p>
+  </section>
+  <!-- Stats Gallery Section -->
+  <!-- Parallax Section -->
+  <!-- More Info Section -->
+  <footer>
+  <!-- Tabs links -->
+  <h1 class="fancy" style="margin-top: 30px; margin-bottom: 30px;" id="targets"> TARGETS </h1>
+<div class="tab">
+  <button id="defaultOpen" class="tablinks" onclick="openTab(event, '14.1')">14.1</button>
+  <button class="tablinks" onclick="openTab(event, '14.2')">14.2</button>
+
+</div>
+  <!-- Tab content -->
+  <div id="14.1" class="tabcontent">
+    <article class="footer_column">
+      <h3>Target 14.1 - Reduce Marine Pollution</h3>
+      <img src="https://static.timesofisrael.com/blogs/uploads/2022/06/plastic-ocean-waste.jpeg" alt="" class="cards"/>
+      <p>By 2025,  prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution. The global trend of elevated coastal eutrophication continued in 2022 above the 2000-2004 baseline conditions, though different in magnitude from recent years. The highest rates are in the Arabian Sea. </p>
+    </article>
+  </div>
+  <div id="14.2" class="tabcontent">
+    <article class="footer_column">
+      <h3>Target 14.2 - Protect and Restore Ecosystems</h3>
+      <img src="https://today.ucsd.edu/news_uploads/Palau_BrianZgliczynski_Scripps_1.jpg" alt="" class="cards"/>
+      <p>By 2020, sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration in order to achieve healthy and productive oceans. </p>
+    </article>
+  </div>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <h1 style="color:white; text-align: center;">Other Pages</h1>
+	  <ul class="buttonholder">
+	  <li><a href="index.html"><div class="button">Homepage</div></a></li>
+		  <li><a href="factors.html"><div class="button">Factors</div></a></li>
+		  <li><a href=""><div class="button">Innovation</div></a></li>
+		  </ul>
+	  <div class="footer2"> <br>
+    <br>
+    <p>Website Designed by Hadam, Arthur and Aryan</p>
+  </div>
+  </section>
+  <!-- Copyrights Section -->
+  
+</div>
+<!-- Main Container Ends -->
+<script>document.getElementById("defaultOpen").click();</script>
+</body>
+</html>
