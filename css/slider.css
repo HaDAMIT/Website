@@ -108,6 +108,7 @@ body {
 /* Handle */
 #slides-container::-webkit-scrollbar-thumb {
   background: #74C7F5;
+  border-radius: 20px;
 }
 
 /* Handle on hover */
