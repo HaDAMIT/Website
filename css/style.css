@@ -262,27 +262,27 @@ ul li a {
 
 #banner1 {
 	background-image: url("../images/banner1.png");
-	background-color: red;
+	background-color: transparent;
 }
 
 #banner2 {
 	background-image: url("../images/banner2.png");
-	background-color: green;
+	background-color: transparent;
 }
 
 #banner3 {
 	background-image: url("../images/coralbleach.png");
-	background-color: blue;
+	background-color: transparent;
 }
 
 #banner4 {
 	background-image: url("../images/banner4.png");
-	background-color: purple;
+	background-color: transparent;
 }
 
 #banner5 {
 	background-image: url("../images/banner5.png");
-	background-color: orange;
+	background-color: transparent;
 }
 .parallax {
 	color: #DCDCDC;
