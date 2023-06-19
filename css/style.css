@@ -252,20 +252,46 @@ ul li a {
 /* Parallax Section */
 .banner {
   background-color: #2D9AB7;
-  background-image: url("../images/turtle_choking.png");
+  background-image: url("../images/turtle2.jpg");
   height: 400px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 5px;
 }
+
+#banner1 {
+	background-image: url("../images/banner1.png");
+	background-color: red;
+}
+
+#banner2 {
+	background-image: url("../images/banner2.png");
+	background-color: green;
+}
+
+#banner3 {
+	background-image: url("../images/coralbleach.png");
+	background-color: blue;
+}
+
+#banner4 {
+	background-image: url("../images/banner4.png");
+	background-color: purple;
+}
+
+#banner5 {
+	background-image: url("../images/banner5.png");
+	background-color: orange;
+}
 .parallax {
-  color: #DCDCDC;
-  text-align: right;
-  padding-right: 100px;
-  padding-top: 110px;
-  letter-spacing: 2px;
-  margin-top: 0px;
+	color: #DCDCDC;
+	text-align: right;
+	padding-right: 100px;
+	padding-top: 110px;
+	letter-spacing: 2px;
+	margin-top: 0px;
+	font-style: normal;
 }
 .parallax_description {
   color: #DCDCDC;
@@ -279,6 +305,33 @@ ul li a {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
+}
+
+.parallax_description2 {
+  color: #DCDCDC;
+  text-align: right;
+  padding-right: 100px;
+  width: 50%;
+  float: right;
+  font-weight: lighter;
+  line-height: 23px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.examplesheading {
+	background-color: white;
+	color:white;
+	margin-top: -5px;
+	margin-bottom: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	width: 100%;
+	border-bottom: solid thin white;
+	
 }
 /* Style the tab */
 .tab {
@@ -494,6 +547,19 @@ footer {
     float: none;
     text-align: center;
   }
+	  .parallax_description2 {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    width: 90%;
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    float: none;
+    text-align: center;
+  }
   .banner {
     background-color: #2D9AB7;
     background-image: none;
@@ -592,19 +658,32 @@ footer {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    padding-top: 40%;
+    padding-top: 0%;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
     width: 100%;
-    font-size: 18px;
+    
   }
   .parallax_description {
-    padding-top: 0px;
+    padding-top: 30px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    margin-top: 30%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+	.parallax_description2 {
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -624,15 +703,10 @@ footer {
     padding-bottom: 0px;
     padding-left: 0px;
     padding-top: 20%;
+	  text-align: center;
+	  width: 100%;
   }
-  .parallax_description {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    width: 100%;
-    padding-top: 30px;
-  }
+
   .banner {
     padding-left: 20px;
     padding-right: 20px;
