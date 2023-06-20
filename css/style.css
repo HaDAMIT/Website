@@ -79,6 +79,17 @@ header {
   font-size: 50px;
   margin-bottom: 20px;
 }
+
+#titleinnovation {
+	width: 90%;
+	margin-top: 35px;
+  font-size: 40px;
+  margin-bottom: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
 #targets {
   padding-top: 10px;
   margin-bottom: -20px;
@@ -352,6 +363,8 @@ ul li a {
   padding: 14px 16px;
   transition: 0.3s;
 }
+
+
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #A6E1FA;
@@ -717,6 +730,11 @@ footer {
   #title {
     margin-top: 140px;
   }
+	#titleinnovation {
+		margin-top: 180px;
+	}
+
+	
   li {
     float: none;
     text-align: center;
@@ -763,3 +781,4 @@ footer {
     padding: 0px;
   }
 }
+
