@@ -37,7 +37,7 @@
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-  <header>
+  <header id="inheader">
     <div class="logo"> <a href="https://www.globalgoals.org/goals/14-life-below-water/"> <img class="icon" src="images/UN_emblem_blue.svg-removebg-preview (2).png" alt="UN logo"> </a> <a href="index.html"> <strong class="white" id="heading">Life Below Water</strong> </a> </div>
     <nav>
       <ul>
@@ -57,8 +57,8 @@
   <footer id="footer3"> 
     <!-- Tabs links -->
     <div class="tab">
-      <button class="tablinks" id="defaultOpen" style="padding: 14px 100px;" onclick="openTab(event, 'global')">Global </button>
-      <button class="tablinks active" style="padding: 14px 100px;" onclick="openTab(event, 'normo')">Normo</button>
+      <button id="defaultOpen" onclick="openTab(event, 'global')">Global </button>
+      <button onclick="openTab(event, 'normo')">Normanhurst Boys High School</button>
     </div>
     <!-- Tab content -->
     <div id="global" class="tabcontent">
@@ -184,7 +184,7 @@
 </div>
 <!-- Main Container Ends -->
 <script>document.getElementById("defaultOpen").click();</script>
-	<script>
+<script>
 	const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
 const prevButton = document.getElementById("slide-arrow-prev");
