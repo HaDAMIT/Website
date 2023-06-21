@@ -79,13 +79,12 @@ header {
   vertical-align: middle;
 }
 .fancy {
-  background-image:
-    url("../images/wave.png");
-  background-size: 110% auto;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+	background-image: url("../images/wave.png");
+	background-size: 110% auto;
+	background-position: center;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
 }
 .fancyd {
   background-image:
@@ -880,5 +879,5 @@ footer {
 	}
 	
 }
-
-
+#defaultOpen {
+}

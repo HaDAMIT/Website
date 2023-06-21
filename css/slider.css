@@ -7,6 +7,21 @@ body {
   margin: auto;
 }
 
+.helpholder {
+	background-color: #042E45; 
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	margin-bottom: -5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.help {
+	text-align: center;
+	font-size: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 .slider-wrapper {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -122,5 +137,10 @@ body {
 }
 	.slide-img {
 		width: 100%;
+	}
+}
+@media (max-width: 434px){
+	.help {
+		font-size: 30px;
 	}
 }
